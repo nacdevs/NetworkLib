@@ -6,6 +6,8 @@ import Alamofire
 
 public class TestLib{
     let url = "https://uselessfacts.jsph.pl/random.json"
+    public init() {}
+
     
     @available(iOS 13.0.0, *)
     public func getRequest<T: Decodable>(type: T.Type) async throws -> T {
